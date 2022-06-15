@@ -24,7 +24,7 @@ begin
     nb   <= not(entrada2) when (opera = '1') else
             entrada2;
             
-    soma: for i in 0 to (WIDTH-1) generate -- isso daqui é uma forma de gerar mais bits do que os 4 iniciais pretendi
+    soma: for i in 0 to (WIDTH-1) generate -- isso daqui é uma forma de escrever linhas de código mais facilmente
         somando_N: entity work.somadorCompleto1Bit(arch)
         port map(
             a => entrada1(i),
